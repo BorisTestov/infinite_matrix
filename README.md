@@ -13,7 +13,7 @@ Fifth homework in Otus cpp course
 ### Пример:
 ```
  // бесконечная матрица int заполнена значениями -1
- Matrix<int, -1> matrix;
+ InfiniteMatrix<int, -1> matrix;
  assert(matrix.size() == 0); // все ячейки свободны
  auto a = matrix[0][0];
  assert(a == -1);
