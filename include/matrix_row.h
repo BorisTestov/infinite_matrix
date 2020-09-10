@@ -6,10 +6,20 @@
 
 using coordinate = std::tuple<size_t, size_t>;
 
+/**
+ * @brief Ряд бесконечной матрицы
+ * @tparam T Тип хранящихся данных
+ * @tparam default_value значение по умолчанию
+ */
 template<typename T, T default_value>
 class MatrixRow
 {
 public:
+    /**
+     * @brief Ряд с элементами матрицы
+     * @param data Данные
+     * @param row Индекс строки
+     */
     MatrixRow(std::map<coordinate, T>& data, size_t row) :
         data(data), row(row) {};
 

@@ -5,6 +5,11 @@
 
 using coordinate = std::tuple<size_t, size_t>;
 
+/**
+ * @brief Итератор бесконечной матрицы
+ * @tparam T Тип хранящихся данных
+ * @tparam default_value значение по умолчанию
+ */
 template<typename T, T default_value>
 class MatrixIterator : public std::iterator<std::bidirectional_iterator_tag, T>
 {

@@ -8,6 +8,11 @@
 
 using coordinate = std::tuple<size_t, size_t>;
 
+/**
+ * @brief Бесконечная матрица
+ * @tparam T Тип хранящихся данных
+ * @tparam default_value значение по умолчанию
+ */
 template<typename T, T default_value>
 class InfiniteMatrix
 {
