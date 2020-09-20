@@ -11,7 +11,7 @@ using coordinate = std::tuple<size_t, size_t>;
  * @tparam default_value значение по умолчанию
  */
 template<typename T, T default_value>
-class MatrixIterator : public std::iterator<std::bidirectional_iterator_tag, T>
+class MatrixIterator
 {
 public:
     MatrixIterator(typename std::map<coordinate, T>::iterator iter) :
